@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch, Provider } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux'; // Remove the duplicate Provider import
 import { createStore } from 'redux';
+import React, { useEffect } from 'react';
 
-import productData from './products.json'; // Import your JSON data
+import { Provider } from 'react-redux';
+import productData from './products.json';
 import './index.css';
+
 
 // Reducer
 const cartReducer = (state = { products: productData.products }, action) => {
