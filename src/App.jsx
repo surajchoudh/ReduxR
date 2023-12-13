@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch, Provider } from 'react-redux';
 import { createStore } from 'redux';
+
 import productData from './products.json'; // Import your JSON data
 import './index.css';
 
