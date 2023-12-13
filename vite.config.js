@@ -5,3 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 })
+// vite.config.js
+const config = {
+  build: {
+    rollupOptions: {
+      external: ['react-redux']
+      // Add other external dependencies if needed
+    }
+  }
+};
+
+export { config };
